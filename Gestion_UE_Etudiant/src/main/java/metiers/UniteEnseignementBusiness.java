@@ -5,6 +5,10 @@ import entities.UniteEnseignement;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import entities.UniteEnseignement;
+import metiers.UniteEnseignementBusiness;
+
+
 
 public class UniteEnseignementBusiness {
     private static List<UniteEnseignement> unitesEnseignement;

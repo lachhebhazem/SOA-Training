@@ -1,5 +1,7 @@
 package entities;
+import javax.xml.bind.annotation.*;
 
+@XmlRootElement(name = "module")
 public class Module {
     private String matricule;
     private String nom;
@@ -32,7 +34,7 @@ public class Module {
     }
 
     // Getters et Setters
-    public String getMatricule() {
+    @XmlElement public String getMatricule() {
         return matricule;
     }
 
@@ -40,7 +42,7 @@ public class Module {
         this.matricule = matricule;
     }
 
-    public String getNom() {
+    @XmlElement public String getNom() {
         return nom;
     }
 
@@ -48,7 +50,7 @@ public class Module {
         this.nom = nom;
     }
 
-    public int getCoefficient() {
+    @XmlElement public int getCoefficient() {
         return coefficient;
     }
 
@@ -56,7 +58,7 @@ public class Module {
         this.coefficient = coefficient;
     }
 
-    public int getVolumeHoraire() {
+    @XmlElement public int getVolumeHoraire() {
         return volumeHoraire;
     }
 
@@ -64,7 +66,7 @@ public class Module {
         this.volumeHoraire = volumeHoraire;
     }
 
-    public TypeModule getType() {
+    @XmlElement public TypeModule getType() {
         return type;
     }
 
@@ -72,10 +74,11 @@ public class Module {
         this.type = type;
     }
 
-    public UniteEnseignement getUniteEnseignement() {
+    @XmlElement public UniteEnseignement getUniteEnseignement() {
         return uniteEnseignement;
     }
 
+    @XmlElement(name = "uniteEnseignement")
     public void setUniteEnseignement(UniteEnseignement uniteEnseignement) {
         this.uniteEnseignement = uniteEnseignement;
     }
