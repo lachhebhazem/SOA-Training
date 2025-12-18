@@ -1,8 +1,5 @@
 package entities;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlElement;
 
-@XmlRootElement(name = "uniteEnseignement")
 public class UniteEnseignement {
     private int code;
     private String domaine;
@@ -21,7 +18,7 @@ public class UniteEnseignement {
     }
 
     // Getters et Setters
-    @XmlElement public int getCode() {
+    public int getCode() {
         return code;
     }
 
@@ -29,15 +26,15 @@ public class UniteEnseignement {
         this.code = code;
     }
 
-    @XmlElement public String getDomaine() {
+    public String getDomaine() {
         return domaine;
     }
 
-     public void setDomaine(String domaine) {
+    public void setDomaine(String domaine) {
         this.domaine = domaine;
     }
 
-    @XmlElement public String getResponsable() {
+    public String getResponsable() {
         return responsable;
     }
 
@@ -45,7 +42,7 @@ public class UniteEnseignement {
         this.responsable = responsable;
     }
 
-    @XmlElement public int getCredits() {
+    public int getCredits() {
         return credits;
     }
 
@@ -53,7 +50,7 @@ public class UniteEnseignement {
         this.credits = credits;
     }
 
-    @XmlElement public int getSemestre() {
+    public int getSemestre() {
         return semestre;
     }
 
